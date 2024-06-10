@@ -1,0 +1,37 @@
+# In3110_instapy package for python
+
+With this package, you can apply two filters to your photos using three different methods. These methods include pure Python, NumPy, and Numba. The available filters are the black and white filter and the sepia filter. All three methods produce the same results on your image.
+
+## Instructions on how to install
+You have to clone the repository to your local directory and run: 
+
+```bash
+python3 pip install -e .
+```
+
+```bash
+pip install in3110_instapy
+```
+
+### How to use
+
+```
+$ python3 -m in3110_instapy --help
+
+usage: __main__.py [-h] [-o OUT] [-g | -se] [-sc SCALE]
+                   [-i  {numpy,numba,python}]
+                   file
+
+positional arguments:
+  file                  The filename to apply filter to
+
+options:
+  -h, --help            show this help message and exit
+  -o OUT, --out OUT     The output filename
+  -g, --gray            Select gray filter
+  -se, --sepia          Select sepia filter
+  -sc SCALE, --scale SCALE
+                        Scale factor to resize image
+  -i  {numpy,numba,python}, --implementation {numpy,numba,python}
+                        The implementation
+```
